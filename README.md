@@ -1,31 +1,22 @@
-# React + TypeScript + Vite
+# プロジェクト概要
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
 
-Currently, two official plugins are available:
+このプロジェクトは、ReactとTypeScriptを使用したノートアプリです。ユーザーはノートを追加、選択、編集、削除することができます。アプリケーションはローカルストレージを使用してノートデータを保存し、管理します。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 技術スタック＆使用ライブラリ
 
-## Expanding the ESLint configuration
+### フロントエンド
+- **React**: UI ライブラリ
+- **TypeScript**: JavaScriptに型を提供
+- **Vite**: ビルドツール
+- **CSS**: スタイリング
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 開発ツール
+- **ESLint**: コード品質と標準化
+- **TypeScript ESLint**: TypeScriptのためのESLintプラグイン
 
-- Configure the top-level `parserOptions` property like this:
+## その他
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+プロジェクトは`vite`を使用して開発サーバーを起動し、ビルドを生成します。コードの品質を保つために、ESLintが設定されています。アプリケーションのスタイルは`src/App.css`で定義されています。アプリケーションの主要な機能は`src/App.tsx`に記述されています。
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# react-note-typescript-app
